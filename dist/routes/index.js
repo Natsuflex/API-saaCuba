@@ -1,0 +1,28 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var express_1 = require("express");
+var auth_1 = require("./auth");
+var user_1 = require("./user");
+var picto_1 = require("./picto");
+var cuento_1 = require("./cuento");
+var escenario_1 = require("./escenario");
+var coment_1 = require("./coment");
+var imagen_1 = require("./imagen");
+var pregunta_1 = require("./pregunta");
+var seccion_1 = require("./seccion");
+var prueba_1 = require("./prueba");
+var video_1 = require("./video");
+var routes = (0, express_1.Router)();
+routes.use('/auth', auth_1.default);
+routes.use('/users', user_1.default);
+routes.use('/picto', picto_1.default);
+routes.use('/cuento', cuento_1.default);
+routes.use('/escenario', escenario_1.default);
+routes.use('/comentario', coment_1.default);
+routes.use('/imagen', imagen_1.default);
+routes.use('/pregunta', pregunta_1.default);
+routes.use('/prueba', prueba_1.default);
+routes.use('/seccion', seccion_1.default);
+routes.use('/video', video_1.default);
+exports.default = routes;
+//# sourceMappingURL=index.js.map
